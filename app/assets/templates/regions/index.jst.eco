@@ -1,0 +1,7 @@
+<h1>Vertebrae</h1>
+
+<ul>
+<% for region in @regions.models: %>
+  <li><%= region.get('name') %></li>
+<% end %>
+</ul>

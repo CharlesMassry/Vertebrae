@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  root "bones#index"
+  resources :regions
+
+  scope "api" do
+    resources :regions
+  end
+  
+  root "dashboard#index"
 end
